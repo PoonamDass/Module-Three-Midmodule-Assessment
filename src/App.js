@@ -3,6 +3,7 @@ import React , {Component} from "react"
 import productData from "./data/productData"
 import Products from "./Components/Products"
 import Cart from "./Components/Cart"
+import Checkout from "./Components/Checkout"
 import formatPrice from "./helpers/formatPrice"
 
 
@@ -33,16 +34,12 @@ class App extends Component {
     let tax = (subTotal * .05)
 
     let total = subTotal + tax
-
-
-  
-  //  let tax = formatPrice((subTotal) +(subTotal * .05))
     
     return  (
     <div>
       <Products productData = {productData} addToCart={this.addToCart}/>
       <Cart cart={cart} subTotal={formatPrice(subTotal)} tax = {formatPrice(tax)} total={formatPrice(total)}/>
-      
+      <Checkout total={formatPrice(total)}/>
 
     </div>  
     )
