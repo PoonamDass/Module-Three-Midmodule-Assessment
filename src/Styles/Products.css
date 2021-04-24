@@ -1,0 +1,17 @@
+.Products{
+    display: grid;
+    width: 75%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3em 90em;
+    padding-left:3%;
+}
+
+.Products ul{
+    padding: 0%;
+}
+.Products  li{
+    list-style-type: none;     
+  }
+
+
+

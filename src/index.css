@@ -12,7 +12,35 @@ code {
     monospace;
 }
 
-.Products{
+.App{
   display: grid;
-  list-style-type: none;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1 fr 1fr;
+}
+
+button{
+  border-radius: 8px;
+  background-color: #cb99c5 ;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  color:white;
+  border: none;
+
+}
+
+
+button:hover {
+  background-color: lightgreen;
+  color: black;
+}
+
+h1{
+  color:brown;
+  font-size: 40px;
+}
+
+h3{
+  color: chocolate;
+  font-size: 20px;
 }

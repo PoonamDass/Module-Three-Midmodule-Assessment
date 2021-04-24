@@ -1,5 +1,6 @@
 import React from "react"
 import Product from "./Product"
+import "../Styles/Products.css"
 
 const  Products= ({productData, addToCart}) =>{
     const items = productData.map(item=>{

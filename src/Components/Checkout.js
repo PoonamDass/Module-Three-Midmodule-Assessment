@@ -31,7 +31,7 @@ class Checkout extends React.Component{
 
     render(){
         return (
-        <section>
+        <section className="Checkout">
 
             <h1>Checkout</h1>
 
@@ -87,6 +87,8 @@ class Checkout extends React.Component{
                     value={this.state.zipCode}
                     onChange={this.handleChange}/>
                 <br/>
+                <br/>
+
 
                 <button>Buy Now</button>
 

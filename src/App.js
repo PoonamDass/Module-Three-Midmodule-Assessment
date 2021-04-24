@@ -36,10 +36,13 @@ class App extends Component {
     let total = subTotal + tax
     
     return  (
-    <div>
+    <div className="App">
       <Products productData = {productData} addToCart={this.addToCart}/>
+      < div clasName ="Container">
       <Cart cart={cart} subTotal={formatPrice(subTotal)} tax = {formatPrice(tax)} total={formatPrice(total)}/>
       <Checkout total={formatPrice(total)}/>
+
+      </div>
 
     </div>  
     )
